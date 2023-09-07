@@ -416,156 +416,243 @@ footer {
     margin-bottom: 10px;
 }
 
-/*For mobile devices*/
 
-/* Mobile styles */
-@media (max-width: 768px) {
-    /* Existing mobile styles here... */
-  
-    /* Adjustments for mobile */
-      .logo {
-      font-size: 24px; /* Reduce logo font size for mobile */
-      }
-      .navbar a {
-        margin: 5px 0; /* Reduce margin between navigation links for mobile */
-      }
-    
-      .homepage h1 {
-        font-size: 24px; /* Reduce homepage heading font size for mobile */
-      }
-    
-      .homepage p {
-        font-size: 14px; /* Reduce homepage paragraph font size for mobile */
-      }
-    
-      button {
-        padding: 10px 20px; /* Adjust button padding for mobile */
-        font-size: 16px; /* Reduce button font size for mobile */
-      }
-    
-      .footer-content h3 {
-        font-size: 1.4rem; /* Reduce footer heading font size for mobile */
-        line-height: 2rem;
-      }
-    
-      .footer-content p {
-        font-size: 12px; /* Reduce footer paragraph font size for mobile */
-      }
-
-      /*For the logos and stuff*/
-
-      .logo {
-        font-size: 24px; /* Reduce logo font size for mobile */
-      }
-    
-      .navbar a {
-        margin: 5px 0; /* Reduce margin between navigation links for mobile */
-      }
-    
-      .about-text h1 {
-        font-size: 24px; /* Reduce "About us!" heading font size for mobile */
-      }
-    
-      .about-text h5 {
-        font-size: 16px; /* Reduce subheading font size for mobile */
-      }
-    
-      .about-text p {
-        font-size: 14px; /* Reduce paragraph font size for mobile */
-      }
-    
-      button {
-        padding: 10px 20px; /* Adjust button padding for mobile */
-        font-size: 16px; /* Reduce button font size for mobile */
-      }
-
-      /*For the services*/
-
-      .logo {
-        font-size: 24px; /* Reduce logo font size for mobile */
-      }
-    
-      .navbar a {
-        margin: 5px 0; /* Reduce margin between navigation links for mobile */
-      }
-    
-      .servbox h1 {
-        font-size: 24px; /* Reduce service page heading font size for mobile */
-      }
-    
-      .row {
-        grid-template-columns: repeat(1, minmax(0, 1fr)); /* Display services in one column for mobile */
-      }
-    
-      .service {
-        padding: 10px; /* Adjust service box padding for mobile */
-      }
-    
-      .service i {
-        font-size: 24px; /* Reduce service icon size for mobile */
-      }
-    
-      .service h2 {
-        font-size: 16px; /* Reduce service title font size for mobile */
-      }
-    
-      .service p {
-        font-size: 14px; /* Reduce service description font size for mobile */
-      }
-    
-      button {
-        padding: 10px 20px; /* Adjust button padding for mobile */
-        font-size: 16px; /* Reduce button font size for mobile */
-      }
-
-      /*For the gallery*/
-
-      .logo {
-        font-size: 24px; /* Reduce logo font size for mobile */
-      }
-    
-      .navbar a {
-        margin: 5px 0; /* Reduce margin between navigation links for mobile */
-      }
-    
-      .coming-soon-text h1 {
-        font-size: 24px; /* Reduce "Coming Soon" heading font size for mobile */
-      }
-    
-      .coming-soon-text p {
-        font-size: 14px; /* Reduce "Coming Soon" paragraph font size for mobile */
-      }
-    
-      .footer-content h3 {
-        font-size: 1.4rem; /* Reduce footer heading font size for mobile */
-        line-height: 2rem;
-      }
-    
-
-      /*For the contact*/
-
-      .logo {
-        font-size: 24px; /* Reduce logo font size for mobile */
-      }
-    
-      .navbar a {
-        margin: 5px 0; /* Reduce margin between navigation links for mobile */
-      }
-    
-      .contact-info h1 {
-        font-size: 24px; /* Reduce "Contact Us" heading font size for mobile */
-      }
-    
-      .contact-info p {
-        font-size: 14px; /* Reduce "Contact Us" paragraph font size for mobile */
-      }
-    
-      .contact-info ul li {
-        font-size: 14px; /* Reduce font size of contact details for mobile */
-      }
-    
-      .footer-content h3 {
-        font-size: 1.4rem; /* Reduce footer heading font size for mobile */
-        line-height: 2rem;
-      }
+/* Mobile Devices (319px - 480px) */
+@media only screen and (min-width: 319px) and (max-width: 480px) {
+    /* Header styles for mobile */
+    .header {
+        padding: 10px 20px;
     }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .navbar a {
+        font-size: 16px;
+        margin-left: 20px;
+    }
+
+    /* Homepage styles for mobile */
+    .homepage {
+        padding: 20px 0;
+    }
+
+    .home h1 {
+        font-size: 28px;
+    }
+
+    .home p {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
+
+/* iPads and Tablets (481px - 1200px) */
+@media only screen and (min-width: 481px) and (max-width: 1200px) {
+    /* Header styles for tablets */
+    .header {
+        padding: 20px 50px;
+    }
+
+    .logo {
+        font-size: 28px;
+    }
+
+    .navbar a {
+        font-size: 18px;
+        margin-left: 30px;
+    }
+
+    /* Homepage styles for tablets */
+    .homepage {
+        padding: 50px 0;
+    }
+
+    .home h1 {
+        font-size: 32px;
+    }
+
+    .home p {
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+
+    button {
+        font-size: 18px;
+        padding: 12px 24px;
+    }
+
+    /* About page styles for tablets */
+    .about img {
+        width: 350px;
+    }
+
+    .about-text {
+        width: 450px;
+    }
+
+    .about-text h1 {
+        font-size: 60px;
+    }
+
+    .about-text h5 {
+        font-size: 20px;
+    }
+
+    .about-text p {
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+
+    /* Services page styles for tablets */
+    .service h2 {
+        font-size: 20px;
+    }
+
+    /* Contact page styles for tablets */
+    .contact-info {
+        max-width: 600px;
+    }
+}
+
+/* Laptops (1201px - 1600px) */
+@media only screen and (min-width: 1201px) and (max-width: 1600px) {
+    /* Header styles for laptops */
+    .header {
+        padding: 20px 100px;
+    }
+
+    .logo {
+        font-size: 32px;
+    }
+
+    .navbar a {
+        font-size: 20px;
+        margin-left: 40px;
+    }
+
+    /* Homepage styles for laptops */
+    .homepage {
+        padding: 78px 0;
+    }
+
+    .home h1 {
+        font-size: 36px;
+    }
+
+    .home p {
+        font-size: 18px;
+        margin-bottom: 45px;
+    }
+
+    button {
+        font-size: 18px;
+        padding: 13px 30px;
+    }
+
+    /* About page styles for laptops */
+    .about img {
+        width: 420px;
+    }
+
+    .about-text {
+        width: 550px;
+    }
+
+    .about-text h1 {
+        font-size: 80px;
+    }
+
+    .about-text h5 {
+        font-size: 25px;
+    }
+
+    .about-text p {
+        font-size: 18px;
+        margin-bottom: 45px;
+    }
+
+    /* Services page styles for laptops */
+    .service h2 {
+        font-size: 24px;
+    }
+
+    /* Contact page styles for laptops */
+    .contact-info {
+        max-width: 800px;
+    }
+}
+
+/* Desktops (1601px and more) */
+@media only screen and (min-width: 1601px) {
+    /* Header styles for desktops */
+    .header {
+        padding: 20px 200px;
+    }
+
+    .logo {
+        font-size: 36px;
+    }
+
+    .navbar a {
+        font-size: 22px;
+        margin-left: 50px;
+    }
+
+    /* Homepage styles for desktops */
+    .homepage {
+        padding: 78px 0;
+    }
+
+    .home h1 {
+        font-size: 48px;
+    }
+
+    .home p {
+        font-size: 20px;
+        margin-bottom: 60px;
+    }
+
+    button {
+        font-size: 20px;
+        padding: 15px 40px;
+    }
+
+    /* About page styles for desktops */
+    .about img {
+        width: 500px;
+    }
+
+    .about-text {
+        width: 600px;
+    }
+
+    .about-text h1 {
+        font-size: 100px;
+    }
+
+    .about-text h5 {
+        font-size: 30px;
+    }
+
+    .about-text p {
+        font-size: 20px;
+        margin-bottom: 60px;
+    }
+
+    /* Services page styles for desktops */
+    .service h2 {
+        font-size: 28px;
+    }
+
+    /* Contact page styles for desktops */
+    .contact-info {
+        max-width: 1000px;
+    }
+}
