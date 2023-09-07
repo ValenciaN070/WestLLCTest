@@ -30,14 +30,14 @@ min-height: 100vh;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    opacity: .4;
+    opacity: .6;
 }
 /*End of header*/
 
 /* for the logo and navebar*/
 .logo {
     font-size: 32px;
-    color: #fff;
+    color: white;
     text-decoration: none;
     font-weight: 700;
 }
@@ -223,12 +223,13 @@ a {
     margin-bottom: 60px;
     font-weight: 600;
     position: relative;
+    color: black;
 }
 
 .servbox h1::after {
     content: '';
     background: black;
-    width: 100px;
+    width: 250px;
     height: 5px;
     position: absolute;
     bottom: -5px;
@@ -245,16 +246,20 @@ a {
 .service {
     text-align: center;
     padding: 25px 10px;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 14px;
     cursor: pointer;
-    background: transparent;
+    background: rgba(0, 0, 0, 0.6)
 }
 
 .service i {
     font-size: 40px;
     margin-bottom: 10px;
-    color: black;
+    color: white;
+}
+
+.service h2 {
+    color: #f9004d;
 }
 /* End of the service page */
 
@@ -375,8 +380,6 @@ footer {
 .contact {
     width: 100%;
     padding: 78px 0px;
-    background-color: black;
-    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -385,7 +388,11 @@ footer {
 .contact-info {
     max-width: 800px;
     margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
     color: white;
+    border-radius: 10px;
+    
 }
 
 .contact h1 {
@@ -396,6 +403,7 @@ footer {
 .contact p {
     font-size: 18px;
     margin-bottom: 30px;
+    text-align: left;
 }
 
 .contact ul {
@@ -407,3 +415,157 @@ footer {
     font-size: 16px;
     margin-bottom: 10px;
 }
+
+/*For mobile devices*/
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    /* Existing mobile styles here... */
+  
+    /* Adjustments for mobile */
+      .logo {
+      font-size: 24px; /* Reduce logo font size for mobile */
+      }
+      .navbar a {
+        margin: 5px 0; /* Reduce margin between navigation links for mobile */
+      }
+    
+      .homepage h1 {
+        font-size: 24px; /* Reduce homepage heading font size for mobile */
+      }
+    
+      .homepage p {
+        font-size: 14px; /* Reduce homepage paragraph font size for mobile */
+      }
+    
+      button {
+        padding: 10px 20px; /* Adjust button padding for mobile */
+        font-size: 16px; /* Reduce button font size for mobile */
+      }
+    
+      .footer-content h3 {
+        font-size: 1.4rem; /* Reduce footer heading font size for mobile */
+        line-height: 2rem;
+      }
+    
+      .footer-content p {
+        font-size: 12px; /* Reduce footer paragraph font size for mobile */
+      }
+
+      /*For the logos and stuff*/
+
+      .logo {
+        font-size: 24px; /* Reduce logo font size for mobile */
+      }
+    
+      .navbar a {
+        margin: 5px 0; /* Reduce margin between navigation links for mobile */
+      }
+    
+      .about-text h1 {
+        font-size: 24px; /* Reduce "About us!" heading font size for mobile */
+      }
+    
+      .about-text h5 {
+        font-size: 16px; /* Reduce subheading font size for mobile */
+      }
+    
+      .about-text p {
+        font-size: 14px; /* Reduce paragraph font size for mobile */
+      }
+    
+      button {
+        padding: 10px 20px; /* Adjust button padding for mobile */
+        font-size: 16px; /* Reduce button font size for mobile */
+      }
+
+      /*For the services*/
+
+      .logo {
+        font-size: 24px; /* Reduce logo font size for mobile */
+      }
+    
+      .navbar a {
+        margin: 5px 0; /* Reduce margin between navigation links for mobile */
+      }
+    
+      .servbox h1 {
+        font-size: 24px; /* Reduce service page heading font size for mobile */
+      }
+    
+      .row {
+        grid-template-columns: repeat(1, minmax(0, 1fr)); /* Display services in one column for mobile */
+      }
+    
+      .service {
+        padding: 10px; /* Adjust service box padding for mobile */
+      }
+    
+      .service i {
+        font-size: 24px; /* Reduce service icon size for mobile */
+      }
+    
+      .service h2 {
+        font-size: 16px; /* Reduce service title font size for mobile */
+      }
+    
+      .service p {
+        font-size: 14px; /* Reduce service description font size for mobile */
+      }
+    
+      button {
+        padding: 10px 20px; /* Adjust button padding for mobile */
+        font-size: 16px; /* Reduce button font size for mobile */
+      }
+
+      /*For the gallery*/
+
+      .logo {
+        font-size: 24px; /* Reduce logo font size for mobile */
+      }
+    
+      .navbar a {
+        margin: 5px 0; /* Reduce margin between navigation links for mobile */
+      }
+    
+      .coming-soon-text h1 {
+        font-size: 24px; /* Reduce "Coming Soon" heading font size for mobile */
+      }
+    
+      .coming-soon-text p {
+        font-size: 14px; /* Reduce "Coming Soon" paragraph font size for mobile */
+      }
+    
+      .footer-content h3 {
+        font-size: 1.4rem; /* Reduce footer heading font size for mobile */
+        line-height: 2rem;
+      }
+    
+
+      /*For the contact*/
+
+      .logo {
+        font-size: 24px; /* Reduce logo font size for mobile */
+      }
+    
+      .navbar a {
+        margin: 5px 0; /* Reduce margin between navigation links for mobile */
+      }
+    
+      .contact-info h1 {
+        font-size: 24px; /* Reduce "Contact Us" heading font size for mobile */
+      }
+    
+      .contact-info p {
+        font-size: 14px; /* Reduce "Contact Us" paragraph font size for mobile */
+      }
+    
+      .contact-info ul li {
+        font-size: 14px; /* Reduce font size of contact details for mobile */
+      }
+    
+      .footer-content h3 {
+        font-size: 1.4rem; /* Reduce footer heading font size for mobile */
+        line-height: 2rem;
+      }
+    }
