@@ -302,7 +302,7 @@ footer {
     height: auto;
     width: 100vw;
     font-family: "Open Sans"; 
-    padding-top: 40px;
+    padding-top: 10px;
     color: black;
 }
 
@@ -355,9 +355,10 @@ footer {
 }
 
 .footer-bottom {
+    position: relative;
     background: black;
     width: 100vw;
-    padding: 20px 0;
+    padding: 2px 0;
     text-align: center;
 }
 
